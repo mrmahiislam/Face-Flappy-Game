@@ -218,13 +218,17 @@ canvas {
         line-height: 1.2; /* ensures single line */
     }
 
-    #scoreboard {
-        font-size: 18px;
-        width: 100%;
-        text-align: center;
-        line-height: 1.2; /* ensures single line */
-        margin-top: 5px;  /* optional spacing below title */
-    }
+#scoreboard {
+    font-size: 18px;
+    position: absolute;    /* keep absolute for alignment */
+    top: 60px;             /* adjust this to move it up/down */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    line-height: 1.2;      /* ensures single line */
+}
+
 
     #gameCanvas {
         width: 100%;
@@ -251,14 +255,14 @@ canvas {
 
 #countdown {
         font-size: 80px;
-        top: 50%;        /* vertical center */
-        left: 50%;       /* horizontal center */
+        top: 40%;        /* vertical center */
+        left: 10%;       /* horizontal center */
         transform: translate(-50%, -50%);
     }
 
-    #scoreboard {
-        font-size: 18px;
-    }
+#scoreboard {
+    font-size: 18px;
+}
 
     #title {
         font-size: 36px;
