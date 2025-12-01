@@ -208,7 +208,7 @@ canvas {
 @media (max-width: 500px) {
     #gameContainer {
         width: 90%;       /* fit smaller screens */
-        height: 480px;    /* fixed canvas height to preserve aspect ratio */
+        height: 480px;    /* fixed canvas height */
         margin-top: 60px;
     }
 
@@ -225,9 +225,10 @@ canvas {
     }
 
     #controls button {
-        width: 45%;       /* fit two buttons side by side */
+        width: auto;              /* same as Choose Bird Image button */
+        padding: 10px 20px;       /* match its padding */
         font-size: 16px;
-        padding: 10px;
+        flex: 1;                  /* let buttons expand equally */
     }
 
     #customFileContainer #fileName {
@@ -236,7 +237,7 @@ canvas {
 
     #countdown {
         font-size: 80px; /* smaller countdown */
-        top: 30%;        /* move a bit higher */
+        top: 35%;        /* vertical center */
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -247,7 +248,7 @@ canvas {
 
     #title {
         font-size: 36px;
-        line-height: 1.1; /* prevent title from splitting */
+        line-height: 1.1; /* prevent title from splitting too much */
     }
 
     #developer {
@@ -258,6 +259,7 @@ canvas {
         text-align: center;
     }
 }
+
 
 </style>
 </head>
