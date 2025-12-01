@@ -211,6 +211,20 @@ canvas {
         height: 480px;    /* fixed canvas height */
         margin-top: 60px;
     }
+#title {
+        font-size: 40px;
+        width: 100%;
+        text-align: center;
+        line-height: 1.2; /* ensures single line */
+    }
+
+    #scoreboard {
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+        line-height: 1.2; /* ensures single line */
+        margin-top: 5px;  /* optional spacing below title */
+    }
 
     #gameCanvas {
         width: 100%;
@@ -235,10 +249,10 @@ canvas {
         display: none;    /* hide file name on mobile */
     }
 
-    #countdown {
-        font-size: 80px; /* smaller countdown */
-        top: 35%;        /* vertical center */
-        left: 50%;
+#countdown {
+        font-size: 80px;
+        top: 50%;        /* vertical center */
+        left: 50%;       /* horizontal center */
         transform: translate(-50%, -50%);
     }
 
